@@ -6,9 +6,7 @@ node(){
            git config --global user.email "mahesh.m@agiratech.com"
   git config --global user.name "agiratech-mahesh"
     git pull origin testing'
-    '''
-        
-     }
+    '''   
      }
      }
 }
