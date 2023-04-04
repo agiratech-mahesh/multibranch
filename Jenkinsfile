@@ -1,11 +1,13 @@
 node(){
    stage('git pull'){
      dir('/home/agira/jenkins-test/multibranch'){
-        withCredentials([gitUsernamePassword(credentialsId: 'git-sahins', gitToolName: 'Default')]) {
-      sh 'git config --global --add safe.directory /home/agira/jenkins-test/multibranch'
+//         withCredentials([gitUsernamePassword(credentialsId: 'git-sahins', gitToolName: 'Default')]) {
+      sh '''git config --global --add safe.directory /home/agira/jenkins-test/multibranch'
            git config --global user.email "mahesh.m@agiratech.com"
   git config --global user.name "agiratech-mahesh"
-     sh ' git pull origin testing'
+    git pull origin testing'
+    '''
+        
      }
      }
      }
