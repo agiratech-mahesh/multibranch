@@ -4,8 +4,8 @@ node(){
       sh 'git config --global --add safe.directory /home/agira/jenkins-test/multibranch/multibranch'
         sh 'git stash'
         sh 'git reset --hard'
-//            git config --global user.email "mahesh.m@agiratech.com"
-//   git config --global user.name "agiratech-mahesh"
+     sh '      git config --global user.email "mahesh.m@agiratech.com"'
+ sh ' git config --global user.name "agiratech-mahesh" '
   sh'  git pull origin testing --allow-unrelated-histories' 
      }
      }
