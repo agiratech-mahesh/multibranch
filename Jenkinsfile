@@ -6,7 +6,8 @@ node(){
         sh 'git reset --hard'
      sh '      git config --global user.email "mahesh.m@agiratech.com"'
  sh ' git config --global user.name "agiratech-mahesh" '
-  sh'  git pull origin testing --allow-unrelated-histories' 
+        sh 'git checkout testing '
+//   sh'  git pull origin testing --allow-unrelated-histories' 
      }
      }
 }
